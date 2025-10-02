@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWAT Trainingsplan</title>
+  <style>
+    :root {
+      --accent: #0b5ed7;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --radius: 10px;
+      --shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-family: system-ui, Arial, sans-serif;
+    }
+    body {
+      margin:0;
+      background: var(--bg);
+      padding:20px;
+      line-height:1.6;
+    }
+    header {
+      background: var(--accent);
+      color:white;
+      padding:15px;
+      border-radius: var(--radius);
+      text-align:center;
+      margin-bottom:20px;
+    }
+    h1 {margin:0;}
+    nav {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin:15px 0;
+    }
+    nav a {
+      background:white;
+      padding:8px 14px;
+      border-radius: var(--radius);
+      text-decoration:none;
+      color: var(--accent);
+      box-shadow: var(--shadow);
+      font-weight:bold;
+    }
+    section {
+      background: var(--card);
+      padding:15px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom:20px;
+    }
+    table {
+      width:100%;
+      border-collapse: collapse;
+      margin-top:10px;
+    }
+    th, td {
+      padding:8px;
+      border:1px solid #ddd;
+      text-align:center;
+    }
+    th {background:#eef2f8;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SWAT Trainingsplan</h1>
+    <p>Strukturierter 8-Wochen-Plan für taktisches Training</p>
+  </header>
+
+  <nav>
+    <a href="#ziele">Trainingsziele</a>
+    <a href="#plan">Wochenplan</a>
+    <a href="#bewertung">Bewertung</a>
+  </nav>
+
+  <section id="ziele">
+    <h2>🎯 Trainingsziele</h2>
+    <ul>
+      <li>Taktisches Vorgehen in Gebäuden (CQB)</li>
+      <li>Geiselbefreiungen realistisch trainieren</li>
+      <li>Teamkoordination & Funkdisziplin</li>
+      <li>Scharfschützen- und Absicherungseinsätze</li>
+      <li>Fahrzeugtaktiken und Roadblocks</li>
+    </ul>
+  </section>
+
+  <section id="plan">
+    <h2>📅 8-Wochen-Plan</h2>
+    <table>
+      <tr><th>Woche</th><th>Thema</th><th>Fokus</th></tr>
+      <tr><td>1</td><td>Grundlagen</td><td>Funk, Ausrüstung, Rollen</td></tr>
+      <tr><td>2</td><td>CQB Basics</td><td>Einfache Gebäude sichern</td></tr>
+      <tr><td>3</td><td>Erweiterte CQB</td><td>Mehrstöckige Gebäude</td></tr>
+      <tr><td>4</td><td>Geiselrettung</td><td>Szenarien mit NPC/Spielern</td></tr>
+      <tr><td>5</td><td>Scharfschützen</td><td>Überwachung, Deckung</td></tr>
+      <tr><td>6</td><td>Fahrzeug-Taktik</td><td>Konvois, Roadblocks</td></tr>
+      <tr><td>7</td><td>Einsatz-Übung</td><td>Realistische Mission</td></tr>
+      <tr><td>8</td><td>Abschluss</td><td>Großeinsatz mit Bewertung</td></tr>
+    </table>
+  </section>
+
+  <section id="bewertung">
+    <h2>⭐ Bewertungskriterien</h2>
+    <ul>
+      <li>Kommunikation (klar, kurz, diszipliniert)</li>
+      <li>Teamarbeit (Absprachen, gegenseitige Hilfe)</li>
+      <li>Präzision (Schussdisziplin, Positionierung)</li>
+      <li>Reaktionsfähigkeit (schnelle Entscheidungen)</li>
+    </ul>
+  </section>
+</body>
+</html>
