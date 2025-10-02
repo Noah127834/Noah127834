@@ -1,70 +1,115 @@
-<!DOCTYPE html>
+ <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stuttgart RP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWAT Trainingsplan</title>
   <style>
+    :root {
+      --accent: #0b5ed7;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --radius: 10px;
+      --shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-family: system-ui, Arial, sans-serif;
+    }
     body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-      overflow-x: hidden;
+      margin:0;
+      background: var(--bg);
+      padding:20px;
+      line-height:1.6;
     }
-    .info-box {
-      position: absolute;
-      width: 250px;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #fff3;
-      border-radius: 10px;
-      animation: float 6s ease-in-out infinite;
-      backdrop-filter: blur(5px);
+    header {
+      background: var(--accent);
+      color:white;
+      padding:15px;
+      border-radius: var(--radius);
+      text-align:center;
+      margin-bottom:20px;
     }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-      100% { transform: translateY(0px); }
+    h1 {margin:0;}
+    nav {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin:15px 0;
     }
-    h1 {
-      text-align: center;
-      margin: 20px;
-      font-size: 2em;
-      animation: fadeIn 3s ease-in-out;
+    nav a {
+      background:white;
+      padding:8px 14px;
+      border-radius: var(--radius);
+      text-decoration:none;
+      color: var(--accent);
+      box-shadow: var(--shadow);
+      font-weight:bold;
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+    section {
+      background: var(--card);
+      padding:15px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom:20px;
     }
+    table {
+      width:100%;
+      border-collapse: collapse;
+      margin-top:10px;
+    }
+    th, td {
+      padding:8px;
+      border:1px solid #ddd;
+      text-align:center;
+    }
+    th {background:#eef2f8;}
   </style>
 </head>
 <body>
-  <h1>Stuttgart RP – Informationen & Eindrücke</h1>
-  <script>
-    const texte = [
-      'Willkommen in Stuttgart RP!',
-      'Hier kannst du deine eigenen Inhalte einfügen.',
-      'Fakten über Stuttgart',
-      'Rollenspiel Möglichkeiten',
-      'Verkehr & Infrastruktur',
-      'Kultur & Nachtleben',
-      'Polizei, Feuerwehr & Notdienste',
-      'Job-Systeme und Wirtschaft',
-      'Events und Community',
-      'Deine Ideen zählen!'
-    ];
+  <header>
+    <h1>SWAT Trainingsplan</h1>
+    <p>Strukturierter 8-Wochen-Plan für taktisches Training</p>
+  </header>
 
-    for (let i = 0; i < texte.length; i++) {
-      const box = document.createElement('div');
-      box.className = 'stutgart rp
-        ';
-      box.style.top = Math.random() * window.innerHeight + 'px';
-      box.style.left = Math.random() * window.innerWidth + 'px';
-      box.innerText = texte[https://discord.gg/WDwTj8swMp
-        ];
-      document.body.appendChild(box);
-    }
-  </script>
+  <nav>
+    <a href="#ziele">Trainingsziele</a>
+    <a href="#plan">Wochenplan</a>
+    <a href="#bewertung">Bewertung</a>
+  </nav>
+
+  <section id="ziele">
+    <h2>🎯 Trainingsziele</h2>
+    <ul>
+      <li>Taktisches Vorgehen in Gebäuden (CQB)</li>
+      <li>Geiselbefreiungen realistisch trainieren</li>
+      <li>Teamkoordination & Funkdisziplin</li>
+      <li>Scharfschützen- und Absicherungseinsätze</li>
+      <li>Fahrzeugtaktiken und Roadblocks</li>
+    </ul>
+  </section>
+
+  <section id="plan">
+    <h2>📅 8-Wochen-Plan</h2>
+    <table>
+      <tr><th>Woche</th><th>Thema</th><th>Fokus</th></tr>
+      <tr><td>1</td><td>Grundlagen</td><td>Funk, Ausrüstung, Rollen</td></tr>
+      <tr><td>2</td><td>CQB Basics</td><td>Einfache Gebäude sichern</td></tr>
+      <tr><td>3</td><td>Erweiterte CQB</td><td>Mehrstöckige Gebäude</td></tr>
+      <tr><td>4</td><td>Geiselrettung</td><td>Szenarien mit NPC/Spielern</td></tr>
+      <tr><td>5</td><td>Scharfschützen</td><td>Überwachung, Deckung</td></tr>
+      <tr><td>6</td><td>Fahrzeug-Taktik</td><td>Konvois, Roadblocks</td></tr>
+      <tr><td>7</td><td>Einsatz-Übung</td><td>Realistische Mission</td></tr>
+      <tr><td>8</td><td>Abschluss</td><td>Großeinsatz mit Bewertung</td></tr>
+    </table>
+  </section>
+
+  <section id="bewertung">
+    <h2>⭐ Bewertungskriterien</h2>
+    <ul>
+      <li>Kommunikation (klar, kurz, diszipliniert)</li>
+      <li>Teamarbeit (Absprachen, gegenseitige Hilfe)</li>
+      <li>Präzision (Schussdisziplin, Positionierung)</li>
+      <li>Reaktionsfähigkeit (schnelle Entscheidungen)</li>
+    </ul>
+  </section>
 </body>
 </html>
